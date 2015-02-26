@@ -162,6 +162,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\TransaccionController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -177,12 +178,23 @@
     <Compile Include="Migrations\201502260230565_AddPrecio.Designer.cs">
       <DependentUpon>201502260230565_AddPrecio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201502261625265_FotoEliminada.cs" />
+    <Compile Include="Migrations\201502261625265_FotoEliminada.Designer.cs">
+      <DependentUpon>201502261625265_FotoEliminada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502261753041_usuarios.cs" />
+    <Compile Include="Migrations\201502261753041_usuarios.Designer.cs">
+      <DependentUpon>201502261753041_usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ProyectDbContext.cs" />
     <Compile Include="Models\Transaccion.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\Usuario.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -232,11 +244,6 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Usuario\Create.cshtml" />
-    <Content Include="Views\Usuario\Delete.cshtml" />
-    <Content Include="Views\Usuario\Details.cshtml" />
-    <Content Include="Views\Usuario\Edit.cshtml" />
-    <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Transaccion\Create.cshtml" />
     <Content Include="Views\Transaccion\Delete.cshtml" />
     <Content Include="Views\Transaccion\Details.cshtml" />
@@ -247,6 +254,8 @@
     <Content Include="Views\Producto\Details.cshtml" />
     <Content Include="Views\Producto\Edit.cshtml" />
     <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Usuario\Login.cshtml" />
+    <Content Include="Views\Usuario\Registrarse.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -267,6 +276,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502260230565_AddPrecio.resx">
       <DependentUpon>201502260230565_AddPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502261625265_FotoEliminada.resx">
+      <DependentUpon>201502261625265_FotoEliminada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502261753041_usuarios.resx">
+      <DependentUpon>201502261753041_usuarios.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
