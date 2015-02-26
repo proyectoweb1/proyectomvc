@@ -160,11 +160,29 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\TransaccionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201502260051244_InitialCreate.cs" />
+    <Compile Include="Migrations\201502260051244_InitialCreate.Designer.cs">
+      <DependentUpon>201502260051244_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502260158193_AddProductoOfrecido.cs" />
+    <Compile Include="Migrations\201502260158193_AddProductoOfrecido.Designer.cs">
+      <DependentUpon>201502260158193_AddProductoOfrecido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502260230565_AddPrecio.cs" />
+    <Compile Include="Migrations\201502260230565_AddPrecio.Designer.cs">
+      <DependentUpon>201502260230565_AddPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ProyectDbContext.cs" />
+    <Compile Include="Models\Transaccion.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -214,6 +232,21 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Transaccion\Create.cshtml" />
+    <Content Include="Views\Transaccion\Delete.cshtml" />
+    <Content Include="Views\Transaccion\Details.cshtml" />
+    <Content Include="Views\Transaccion\Edit.cshtml" />
+    <Content Include="Views\Transaccion\Index.cshtml" />
+    <Content Include="Views\Producto\Create.cshtml" />
+    <Content Include="Views\Producto\Delete.cshtml" />
+    <Content Include="Views\Producto\Details.cshtml" />
+    <Content Include="Views\Producto\Edit.cshtml" />
+    <Content Include="Views\Producto\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -224,6 +257,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201502260051244_InitialCreate.resx">
+      <DependentUpon>201502260051244_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502260158193_AddProductoOfrecido.resx">
+      <DependentUpon>201502260158193_AddProductoOfrecido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502260230565_AddPrecio.resx">
+      <DependentUpon>201502260230565_AddPrecio.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
