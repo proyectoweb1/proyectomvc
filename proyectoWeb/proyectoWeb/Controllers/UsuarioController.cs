@@ -87,7 +87,11 @@ namespace proyectoWeb.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
-
+        public ActionResult LogOff()
+        {
+            AuthenticationManager.SignOut();
+            return RedirectToAction("Index", "Producto");
+        }
 
 
 
@@ -107,6 +111,13 @@ namespace proyectoWeb.Controllers
             foreach (var error in result.Errors)
             {
                 ModelState.AddModelError("", error);
+            }
+        }
+        private IAuthenticationManager AuthenticationManager
+        {
+            get
+            {
+                return HttpContext.GetOwinContext().Authentication;
             }
         }
 	}
