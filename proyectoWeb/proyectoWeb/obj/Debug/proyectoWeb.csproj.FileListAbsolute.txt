@@ -113,7 +113,6 @@ C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\pro
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.AddProductoOfrecido.resources
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.AddPrecio.resources
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.FotoEliminada.resources
-C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.usuarios.resources
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csproj.GenerateResource.Cache
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.dll
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.pdb
@@ -176,3 +175,4 @@ C:\Users\Merian Herrera\Desktop\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsof
 C:\Users\Merian Herrera\Desktop\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Merian Herrera\Desktop\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.dll
 C:\Users\Merian Herrera\Desktop\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.pdb
+C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache

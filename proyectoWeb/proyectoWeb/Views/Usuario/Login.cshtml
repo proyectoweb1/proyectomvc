@@ -16,7 +16,7 @@
             @using (Html.BeginForm("Login", "Usuario", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
-                <h4>Use a local account to log in.</h4>
+                <h4>Ingrese sus datos para iniciar.</h4>
                 <hr />
                 @Html.ValidationSummary(true)
                 <div class="form-group">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <p>
-                    @Html.ActionLink("Register", "Usuario") if you don't have a local account.
+                    @Html.ActionLink("Register", "Usuario") Si no tienes una cuenta.
                 </p>
             }
         </section>

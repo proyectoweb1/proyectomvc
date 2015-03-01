@@ -50,6 +50,7 @@ namespace proyectoWeb.Controllers
                 if (user != null)
                 {
                     return RedirectToLocal(returnUrl);
+                    //return RedirectToAction("Index", "Producto");
                 }
                 else
                 {
