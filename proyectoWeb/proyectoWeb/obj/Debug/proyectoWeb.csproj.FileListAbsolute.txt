@@ -52,7 +52,6 @@ C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proy
 C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.dll
 C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.pdb
-C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache
 C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.InitialCreate.resources
 C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csproj.GenerateResource.Cache
 C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.AddProductoOfrecido.resources
@@ -176,3 +175,66 @@ C:\Users\Merian Herrera\Desktop\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsof
 C:\Users\Merian Herrera\Desktop\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.dll
 C:\Users\Merian Herrera\Desktop\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.pdb
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\proyectoWeb.dll.config
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\proyectoWeb.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\proyectoWeb.pdb
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Antlr3.Runtime.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\EntityFramework.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Newtonsoft.Json.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Owin.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.Helpers.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.Mvc.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.Optimization.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.Razor.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.WebPages.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\WebGrease.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.Helpers.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.Mvc.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.Optimization.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.Razor.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.WebPages.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Newtonsoft.Json.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Antlr3.Runtime.pdb
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\EntityFramework.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\EntityFramework.SqlServer.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.InitialCreate.resources
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.AddProductoOfrecido.resources
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.AddPrecio.resources
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.FotoEliminada.resources
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csproj.GenerateResource.Cache
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.dll
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.pdb
+C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.FotoEliminada.resources
+C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.cambio.resources
+C:\Users\JONA\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache

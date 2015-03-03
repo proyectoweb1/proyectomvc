@@ -48,6 +48,7 @@ namespace proyectoWeb.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include="Id,nombre_producto,descripcion,foto,estado,fecha,precio")] Producto producto)
         {
+            producto.usuario = User.Identity.Name;
             if (ModelState.IsValid)
             {
                 db.Productos.Add(producto);

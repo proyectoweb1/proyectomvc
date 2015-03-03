@@ -182,6 +182,10 @@
     <Compile Include="Migrations\201502261625265_FotoEliminada.Designer.cs">
       <DependentUpon>201502261625265_FotoEliminada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503030244293_cambio.cs" />
+    <Compile Include="Migrations\201503030244293_cambio.Designer.cs">
+      <DependentUpon>201503030244293_cambio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ProyectDbContext.cs" />
@@ -275,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502261625265_FotoEliminada.resx">
       <DependentUpon>201502261625265_FotoEliminada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503030244293_cambio.resx">
+      <DependentUpon>201503030244293_cambio.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
