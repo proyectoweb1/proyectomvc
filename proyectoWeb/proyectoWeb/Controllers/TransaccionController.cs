@@ -50,6 +50,7 @@ namespace proyectoWeb.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include="Id,Estado,FechaCreacion,ProductoOfrecidoId")] Transaccion transaccion)
         {
+            transaccion.usuario = User.Identity.Name;
             if (ModelState.IsValid)
             {
                 db.Transacciones.Add(transaccion);

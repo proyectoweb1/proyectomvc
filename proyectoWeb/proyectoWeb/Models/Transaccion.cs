@@ -9,6 +9,7 @@ namespace proyectoWeb.Models
     public class Transaccion
     {
         public int Id { get; set; }
+        public string usuario { get; set; }
         public string Estado { get; set; }
         public string FechaCreacion { get; set; }
 

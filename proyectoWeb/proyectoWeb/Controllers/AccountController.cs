@@ -49,6 +49,7 @@ namespace proyectoWeb.Controllers
                 var user = await UserManager.FindAsync(model.UserName, model.Password);
                 if (user != null)
                 {
+                    Session["User"] = model.UserName;
                     await SignInAsync(user, model.RememberMe);
                     return RedirectToLocal(returnUrl);
                 }
@@ -290,6 +291,7 @@ namespace proyectoWeb.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult LogOff()
         {
+            Session.Remove("User");
             AuthenticationManager.SignOut();
             return RedirectToAction("Index", "Home");
         }
