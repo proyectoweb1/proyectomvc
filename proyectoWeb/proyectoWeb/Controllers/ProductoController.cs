@@ -153,21 +153,21 @@ namespace proyectoWeb.Controllers
         }
 
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Search([Bind(Include = "nombre_producto")] Producto producto)
-        //{
-        //    producto.usuario = User.Identity.Name;
-        //    if (ModelState.IsValid)
-        //    {
-        //        var product = from Products in Producto
-        //                                   where Products.nombre_producto == producto
-        //                                   select Products;
-        //        return RedirectToAction("Index");
-        //    }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Search([Bind(Include = "nombre_producto")] Producto producto)
+        {
+            producto.usuario = User.Identity.Name;
+            if (ModelState.IsValid)
+            {
+                var product = from Products in db.Productos
+                              where Products.nombre_producto.Equals(producto.nombre_producto)
+                              select Products;
+                return RedirectToAction("Index");
+            }
 
-        //    return View(producto);
-        //}
+            return View(producto);
+        }
             
     }
 }
