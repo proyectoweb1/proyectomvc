@@ -14,6 +14,16 @@ namespace proyectoWeb
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "products",
+                url: "products",
+                defaults: new { controller = "Producto", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+               name: "transacciones",
+               url: "transacciones",
+               defaults: new { controller = "Transaccion", action = "Index", id = UrlParameter.Optional }
+           );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Producto", action = "Index", id = UrlParameter.Optional }
