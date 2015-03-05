@@ -38,7 +38,15 @@ namespace proyectoWeb.Controllers
         // GET: /Producto/Create
         public ActionResult Create()
         {
-            return View();
+            if (Session["User"] != null)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("login", "Account");
+            }
+            
         }
 
         // POST: /Producto/Create
@@ -71,7 +79,14 @@ namespace proyectoWeb.Controllers
             {
                 return HttpNotFound();
             }
-            return View(producto);
+            if (Session["User"] != null)
+            {
+                return View(producto);
+            }
+            else
+            {
+                return RedirectToAction("login", "Account");
+            }
         }
 
         // POST: /Producto/Edit/5
@@ -102,7 +117,14 @@ namespace proyectoWeb.Controllers
             {
                 return HttpNotFound();
             }
-            return View(producto);
+            if (Session["User"] != null)
+            {
+                return View(producto);
+            }
+            else
+            {
+                return RedirectToAction("login", "Account");
+            }
         }
 
         // POST: /Producto/Delete/5

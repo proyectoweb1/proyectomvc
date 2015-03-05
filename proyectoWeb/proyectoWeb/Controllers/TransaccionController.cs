@@ -40,7 +40,14 @@ namespace proyectoWeb.Controllers
         public ActionResult Create()
         {
             ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto");
-            return View();
+            if (Session["User"] != null)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("login", "Account");
+            }
         }
 
         // POST: /Transaccion/Create
@@ -74,8 +81,15 @@ namespace proyectoWeb.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto", transaccion.ProductoOfrecidoId);
-            return View(transaccion);
+            ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto", transaccion.ProductoOfrecidoId);           
+            if (Session["User"] != null)
+            {
+                return View(transaccion);
+            }
+            else
+            {
+                return RedirectToAction("login", "Account");
+            }
         }
 
         // POST: /Transaccion/Edit/5
@@ -107,7 +121,15 @@ namespace proyectoWeb.Controllers
             {
                 return HttpNotFound();
             }
-            return View(transaccion);
+            if (Session["User"] != null)
+            {
+                return View(transaccion);
+            }
+            else
+            {
+                return RedirectToAction("login", "Account");
+            }
+
         }
 
         // POST: /Transaccion/Delete/5
