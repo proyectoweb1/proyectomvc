@@ -11,8 +11,8 @@ namespace proyectoWeb.Models
     public class Producto
     {
         public int Id { get; set; }
-        [DisplayName("Nombre del Producto")]
         public string usuario { get; set; }
+        [DisplayName("Nombre del Producto")]
         public string nombre_producto { get; set; }
         [DisplayName("Descripcion del Producto")]
         public string descripcion { get; set; }

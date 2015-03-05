@@ -146,5 +146,28 @@ namespace proyectoWeb.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Search()
+        {
+                return View();
+        }
+
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Search([Bind(Include = "nombre_producto")] Producto producto)
+        //{
+        //    producto.usuario = User.Identity.Name;
+        //    if (ModelState.IsValid)
+        //    {
+        //        var product = from Products in Producto
+        //                                   where Products.nombre_producto == producto
+        //                                   select Products;
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    return View(producto);
+        //}
+            
     }
 }
