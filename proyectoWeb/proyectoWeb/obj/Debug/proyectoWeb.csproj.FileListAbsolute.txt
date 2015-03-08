@@ -167,7 +167,6 @@ C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.OA
 C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache
 C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.InitialCreate.resources
 C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.AddProductoOfrecido.resources
 C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.AddPrecio.resources
@@ -239,3 +238,4 @@ C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\pro
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.dll
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.pdb
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.cambio.resources
