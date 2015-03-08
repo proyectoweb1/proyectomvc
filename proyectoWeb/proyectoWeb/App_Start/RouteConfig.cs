@@ -28,6 +28,11 @@ namespace proyectoWeb
                url: "home",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
            );
+           routes.MapRoute(
+              name: "buscar",
+              url: "buscar",
+              defaults: new { controller = "Producto", action = "Search", id = UrlParameter.Optional }
+          );
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
