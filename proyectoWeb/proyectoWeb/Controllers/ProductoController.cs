@@ -155,18 +155,15 @@ namespace proyectoWeb.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Search([Bind(Include = "nombre_producto")] Producto producto)
+        public ActionResult Data(String nombre_producto)
         {
-            producto.usuario = User.Identity.Name;
-            if (ModelState.IsValid)
+            var product = from m in db.Productos
+                         select m;
+            if (!String.IsNullOrEmpty(nombre_producto))
             {
-                var product = from Products in db.Productos
-                              where Products.nombre_producto.Equals(producto.nombre_producto)
-                              select Products;
-                return RedirectToAction("Index");
+                product = product.Where(s => s.nombre_producto.Contains(nombre_producto));
             }
-
-            return View(producto);
+            return View(product);
         }
             
     }
