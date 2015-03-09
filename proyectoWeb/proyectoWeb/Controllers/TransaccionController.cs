@@ -33,13 +33,13 @@ namespace proyectoWeb.Controllers
             {
                 return HttpNotFound();
             }
-            return View(transaccion);
+            return View(transaccion);   
         }
 
         // GET: /Transaccion/Create
         public ActionResult Create()
         {
-            ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto");
+            ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto",User.Identity.Name);
             if (Session["User"] != null)
             {
                 return View();

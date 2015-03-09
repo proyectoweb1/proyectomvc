@@ -85,7 +85,7 @@ namespace proyectoWeb.Controllers
                 if (result.Succeeded)
                 {
                     await SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Productos");
                 }
                 else
                 {
@@ -293,7 +293,7 @@ namespace proyectoWeb.Controllers
         {
             Session.Remove("User");
             AuthenticationManager.SignOut();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Productos");
         }
 
         //

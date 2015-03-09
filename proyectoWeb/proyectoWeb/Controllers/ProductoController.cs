@@ -17,7 +17,16 @@ namespace proyectoWeb.Controllers
         // GET: /Producto/
         public ActionResult Index()
         {
-            return View(db.Productos.ToList());
+            if (User.Identity.Name =="")
+            {
+                return RedirectToAction("login", "Account");
+                
+            }
+            else
+            {
+                return View(db.Productos.ToList());
+            }
+            
         }
 
         // GET: /Producto/Details/5

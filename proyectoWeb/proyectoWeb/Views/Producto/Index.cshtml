@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
-
+<h2>Productos actuales de usuario @User.Identity.Name </h2>
+@Html.ActionLink("Create New", "Create")
 <p>
-    @Html.ActionLink("Create New", "Create")
+   
 </p>
 <table class="table">
     <tr>
@@ -29,11 +29,10 @@
         </th>
         <th></th>
     </tr>
-    @if (User.Identity.Name=="")
+@if (User.Identity.Name == "")
     {
-        foreach (var item in Model) {
-   
-        <tr>
+           foreach (var item in Model) {
+         <tr>
         <td>
             @Html.DisplayFor(modelItem => item.nombre_producto)
         </td>
@@ -50,12 +49,12 @@
             @Html.DisplayFor(modelItem => item.precio)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
         </td>
     </tr>
-}
+    }
     }
 @foreach (var item in Model) {
     if (item.usuario==User.Identity.Name)
@@ -77,9 +76,9 @@
             @Html.DisplayFor(modelItem => item.precio)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
         </td>
     </tr>
 }
