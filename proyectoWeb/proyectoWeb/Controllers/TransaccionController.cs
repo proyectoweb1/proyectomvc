@@ -17,7 +17,8 @@ namespace proyectoWeb.Controllers
         // GET: /Transaccion/
         public ActionResult Index()
         {
-            var transacciones = db.Transacciones.Include(t => t.ProductoOfrecido);
+            
+            var transacciones = db.Transacciones;
             return View(transacciones.ToList().Where(t => t.usuario == User.Identity.Name));
         }
 
