@@ -18,6 +18,14 @@
         @Html.HiddenFor(model => model.Id)
 
         <div class="form-group">
+            @Html.LabelFor(model => model.usuario, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.usuario)
+                @Html.ValidationMessageFor(model => model.usuario)
+            </div>
+        </div>
+
+        <div class="form-group">
             @Html.LabelFor(model => model.Estado, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Estado)
@@ -38,6 +46,22 @@
             <div class="col-md-10">
                 @Html.DropDownList("ProductoOfrecidoId", String.Empty)
                 @Html.ValidationMessageFor(model => model.ProductoOfrecidoId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductoCambioId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductoCambioId)
+                @Html.ValidationMessageFor(model => model.ProductoCambioId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comentario, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Comentario)
+                @Html.ValidationMessageFor(model => model.Comentario)
             </div>
         </div>
 

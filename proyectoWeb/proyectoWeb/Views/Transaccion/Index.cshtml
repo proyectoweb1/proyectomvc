@@ -12,45 +12,25 @@
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductoOfrecido.nombre_producto)
-        </th>
+        
         <th>
             @Html.DisplayNameFor(model => model.Estado)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.FechaCreacion)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductoCambioId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comentario)
+        </th>
         <th></th>
     </tr>
-    @if (User.Identity.Name =="")
-    {
-        foreach (var item in Model) {
-        <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductoOfrecido.nombre_producto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FechaCreacion)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>  
-             }
-    }
+
 @foreach (var item in Model) {
-    if (@item.usuario == User.Identity.Name)
-    {
-     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductoOfrecido.nombre_producto)
-        </td>
+    <tr>
+        
         <td>
             @Html.DisplayFor(modelItem => item.Estado)
         </td>
@@ -58,13 +38,17 @@
             @Html.DisplayFor(modelItem => item.FechaCreacion)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.ProductoCambioId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comentario)
+        </td>
+        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
-    </tr>  
-    }
-    
+    </tr>
 }
 
 </table>

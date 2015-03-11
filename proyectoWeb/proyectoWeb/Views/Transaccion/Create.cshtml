@@ -1,4 +1,4 @@
-﻿  @model proyectoWeb.Models.Transaccion
+﻿@model proyectoWeb.Models.Transaccion
 
 @{
     ViewBag.Title = "Create";
@@ -10,12 +10,13 @@
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-      
+    
     <div class="form-horizontal">
         <h4>Transaccion</h4>
         <hr />
         @Html.ValidationSummary(true)
 
+       
         <div class="form-group">
             @Html.LabelFor(model => model.Estado, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -31,6 +32,7 @@
                 @Html.ValidationMessageFor(model => model.FechaCreacion)
             </div>
         </div>
+
         <div class="form-group">
             @Html.LabelFor(model => model.ProductoOfrecidoId, "ProductoOfrecidoId", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -38,7 +40,22 @@
                 @Html.ValidationMessageFor(model => model.ProductoOfrecidoId)
             </div>
         </div>
-        
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductoCambioId,"ProductoCambioId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ProductoCambioId", String.Empty)
+                @Html.ValidationMessageFor(model => model.ProductoCambioId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comentario, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Comentario)
+                @Html.ValidationMessageFor(model => model.Comentario)
+            </div>
+        </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">

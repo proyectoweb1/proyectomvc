@@ -187,6 +187,10 @@
     <Compile Include="Migrations\201503030244293_cambio.Designer.cs">
       <DependentUpon>201503030244293_cambio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503111451324_actualizacion base.cs" />
+    <Compile Include="Migrations\201503111451324_actualizacion base.Designer.cs">
+      <DependentUpon>201503111451324_actualizacion base.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Productos.cs" />
@@ -246,11 +250,6 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Transaccion\Create.cshtml" />
-    <Content Include="Views\Transaccion\Delete.cshtml" />
-    <Content Include="Views\Transaccion\Details.cshtml" />
-    <Content Include="Views\Transaccion\Edit.cshtml" />
-    <Content Include="Views\Transaccion\Index.cshtml" />
     <Content Include="Views\Producto\Create.cshtml" />
     <Content Include="Views\Producto\Delete.cshtml" />
     <Content Include="Views\Producto\Details.cshtml" />
@@ -262,6 +261,11 @@
     <Content Include="Views\Productos\Index.cshtml" />
     <Content Include="Views\Productos\Details.cshtml" />
     <Content Include="Views\Producto\Data.cshtml" />
+    <Content Include="Views\Transaccion\Create.cshtml" />
+    <Content Include="Views\Transaccion\Delete.cshtml" />
+    <Content Include="Views\Transaccion\Details.cshtml" />
+    <Content Include="Views\Transaccion\Edit.cshtml" />
+    <Content Include="Views\Transaccion\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -288,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503030244293_cambio.resx">
       <DependentUpon>201503030244293_cambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503111451324_actualizacion base.resx">
+      <DependentUpon>201503111451324_actualizacion base.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

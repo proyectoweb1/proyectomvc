@@ -239,3 +239,5 @@ C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\pro
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.pdb
 C:\Users\Diego\Documents\Visual Studio 2013\Projects\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache
 C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.cambio.resources
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.Migrations.actualizacionbase.resources
+C:\Users\JONA\proyectomvc\proyectoWeb\proyectoWeb\obj\Debug\proyectoWeb.csprojResolveAssemblyReference.cache

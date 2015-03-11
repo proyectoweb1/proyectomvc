@@ -18,7 +18,7 @@ namespace proyectoWeb.Controllers
         public ActionResult Index()
         {
             var transacciones = db.Transacciones.Include(t => t.ProductoOfrecido);
-            return View(transacciones.ToList());
+            return View(transacciones.ToList().Where(t => t.usuario == User.Identity.Name));
         }
 
         // GET: /Transaccion/Details/5
@@ -33,21 +33,15 @@ namespace proyectoWeb.Controllers
             {
                 return HttpNotFound();
             }
-            return View(transaccion);   
+            return View(transaccion);
         }
 
         // GET: /Transaccion/Create
         public ActionResult Create()
         {
-            ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto",User.Identity.Name);
-            if (Session["User"] != null)
-            {
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("login", "Account");
-            }
+            ViewBag.ProductoOfrecidoId = new SelectList(db.Productos.Where(t => t.usuario == User.Identity.Name), "Id", "nombre_producto");
+            ViewBag.ProductoCambioId = new SelectList(db.Productos, "Id", "nombre_producto"); 
+            return View();
         }
 
         // POST: /Transaccion/Create
@@ -55,7 +49,7 @@ namespace proyectoWeb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="Id,Estado,FechaCreacion,ProductoOfrecidoId")] Transaccion transaccion)
+        public ActionResult Create([Bind(Include="Id,usuario,Estado,FechaCreacion,ProductoOfrecidoId,ProductoCambioId,Comentario")] Transaccion transaccion)
         {
             transaccion.usuario = User.Identity.Name;
             if (ModelState.IsValid)
@@ -66,6 +60,7 @@ namespace proyectoWeb.Controllers
             }
 
             ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto", transaccion.ProductoOfrecidoId);
+            ViewBag.ProductoCambioId = new SelectList(db.Productos, "Id", "nombre_producto");
             return View(transaccion);
         }
 
@@ -81,15 +76,9 @@ namespace proyectoWeb.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto", transaccion.ProductoOfrecidoId);           
-            if (Session["User"] != null)
-            {
-                return View(transaccion);
-            }
-            else
-            {
-                return RedirectToAction("login", "Account");
-            }
+            ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto", transaccion.ProductoOfrecidoId);
+            ViewBag.ProductoCambioId = new SelectList(db.Productos, "Id", "nombre_producto");
+            return View(transaccion);
         }
 
         // POST: /Transaccion/Edit/5
@@ -97,7 +86,7 @@ namespace proyectoWeb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="Id,Estado,FechaCreacion,ProductoOfrecidoId")] Transaccion transaccion)
+        public ActionResult Edit([Bind(Include="Id,usuario,Estado,FechaCreacion,ProductoOfrecidoId,ProductoCambioId,Comentario")] Transaccion transaccion)
         {
             if (ModelState.IsValid)
             {
@@ -106,6 +95,7 @@ namespace proyectoWeb.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.ProductoOfrecidoId = new SelectList(db.Productos, "Id", "nombre_producto", transaccion.ProductoOfrecidoId);
+            ViewBag.ProductoCambioId = new SelectList(db.Productos, "Id", "nombre_producto");
             return View(transaccion);
         }
 
@@ -121,15 +111,7 @@ namespace proyectoWeb.Controllers
             {
                 return HttpNotFound();
             }
-            if (Session["User"] != null)
-            {
-                return View(transaccion);
-            }
-            else
-            {
-                return RedirectToAction("login", "Account");
-            }
-
+            return View(transaccion);
         }
 
         // POST: /Transaccion/Delete/5
